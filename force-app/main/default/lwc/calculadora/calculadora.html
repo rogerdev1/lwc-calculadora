@@ -1,0 +1,33 @@
+<template>
+    <lightning-card icon-name="standard:account" variant="base" title="Calculadora">
+        <div class="calculator">
+            <input type="text" class="display" readonly placeholder="0">
+            <div class="buttons-container">
+                <div class="numeros">
+                    <button class="on" data-value="ON" onclick={onDisplay}>ON</button>
+                    <button class="off" data-value="OFF" onclick={offDisplay}>OFF</button>
+                    <button class="" data-value="C" onclick={clearDisplay}>C</button>
+                    <button class="btn" data-value="7" onclick={appendToDisplay}>7</button>
+                    <button class="btn" data-value="8" onclick={appendToDisplay}>8</button>
+                    <button class="btn" data-value="9" onclick={appendToDisplay}>9</button>
+                    <button class="btn" data-value="4" onclick={appendToDisplay}>4</button>
+                    <button class="btn" data-value="5" onclick={appendToDisplay}>5</button>
+                    <button class="btn" data-value="6" onclick={appendToDisplay}>6</button>
+                    <button class="btn" data-value="1" onclick={appendToDisplay}>1</button>
+                    <button class="btn" data-value="2" onclick={appendToDisplay}>2</button>
+                    <button class="btn" data-value="3" onclick={appendToDisplay}>3</button>
+                    <button class="" data-value="0" onclick={appendToDisplay}>0</button>
+                    <button class="" data-value="." onclick={appendToDisplay}>.</button>
+                    <button class="" data-value="=" onclick={calculate}>=</button>
+                </div>
+                <div class="sinais">
+                    <button data-value="/" onclick={appendToDisplay}>/</button>
+                    <button data-value="*" onclick={appendToDisplay}>*</button>
+                    <button data-value="-" onclick={appendToDisplay}>-</button>
+                    <button class="buttonMore" data-value="+" onclick={appendToDisplay}>+</button>    
+                </div>
+            </div>
+        </div>
+    </lightning-card>
+    
+</template>
