@@ -1,4 +1,9 @@
-# Salesforce DX Project: Next Steps
+# Calculadora LWC
+
+Componente do Web Lightning para uso em páginas do Salesforce.
+
+
+## Salesforce DX Project: Next Steps
 
 Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
 
